@@ -1,17 +1,134 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+  <ion-toolbar color="primary">
+    <ion-buttons start>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="search"></ion-icon>
+      </button>
+      </ion-buttons>
+      <ion-title> 
+        Comercios
+      </ion-title>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+<ion-content class="card-background-page">
+
+<div id="map"></div>
+
+  <ion-card>
+    <img src="assets/resto.png"/>
+    <div class="card-title">Salidas</div>
+      <div class="card-subtitle" >
+        <div class="tabs" padding>
+          <a tabIcon="water" tabTitle="Water">
+            <button ion-button color="light" round small>
+          Bares
+        </button>
+          </a>
+          <a class="tab-item">
+            <button ion-button color="light" round small>
+          Restaurantes
+        </button>
+          </a>
+          <a class="tab-item">
+            <button ion-button color="light" round small>
+          Delivery
+        </button>
+          </a>
+        </div>    
+      </div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/shopping.png"/>
+    <div class="card-title">Shopping</div>
+      <div class="card-subtitle">
+        <div class="tabs" padding>
+          <a class="tab-item" tabIcon="water" tabTitle="Water">
+            <button ion-button color="light" round small>
+          Tiendas Ropa
+        </button>
+          </a>
+          <a class="tab-item">
+            <button ion-button color="light" round small>
+          Zapaterias
+        </button>
+          </a>
+        </div>  
+      </div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/Salud.png"/>
+    <div class="card-title">Salud</div>
+    <div class="card-subtitle">
+      <div class="tabs" padding>
+          <a class="tab-item" tabIcon="water" tabTitle="Water">
+            <button ion-button color="light" round small>
+          Farmacias
+        </button>
+          </a>
+          <a class="tab-item">
+            <button ion-button color="light" round small>
+          Gimasios
+        </button>
+          </a>
+          <a class="tab-item">
+            <button ion-button color="light" round small>
+          Odontologos
+        </button>
+          </a>
+      </div>  
+    </div>
+  </ion-card>
+
+<ion-card>
+    <img src="assets/supermercado.png"/>
+    <div class="card-title">Compras</div>
+    <div class="card-subtitle" >
+      <div class="tabs" padding>
+          <a class="tab-item" tabIcon="water" tabTitle="Water">
+            <button ion-button color="light" round small>
+          Verdulerias
+        </button>
+          </a>
+          <a class="tab-item">
+            <button ion-button color="light" round small>
+          Supermercados
+        </button>
+          </a>
+          <a class="tab-item">
+            <button ion-button color="light" round small>
+          Kioscos
+        </button>
+          </a>
+      </div>      
+    </div>
+</ion-card>
+
+  <ion-card>
+    <img src="assets/herramientas.png"/>
+    <div class="card-title">Herramientas</div>
+    <div class="card-subtitle">
+      <div class="tabs" padding>
+          <a class="tab-item" tabIcon="water" tabTitle="Water">
+            <button ion-button color="light" round small>
+          Ferreterias
+        </button>
+          </a>
+          <a class="tab-item">
+            <button ion-button color="light" round small>
+          Buloneras
+        </button>
+          </a>
+          <a class="tab-item">
+            <button ion-button color="light" round small>
+          Cerrajerias
+        </button>
+          </a>
+      </div>            
+  </div>
+    </ion-card>
+
 </ion-content>
