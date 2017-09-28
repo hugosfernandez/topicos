@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class SistemaVeterinaria{
     public static void main (String [] args){
         Scanner datos = new Scanner(System.in);
-        System.out.println("Ingrese el nombre veterinaria");
+        System.out.println("Ingrese nombre veterinaria");
         String nombreVeterinaria = datos.next();
         Veterinaria unaVeterinaria = new Veterinaria(nombreVeterinaria);
         Perro unPerro = new Perro("Lassie", 5, 875, "En venta");
